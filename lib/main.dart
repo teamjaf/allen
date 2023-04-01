@@ -15,8 +15,10 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Allen',
       theme: ThemeData.light(useMaterial3: true).copyWith(
-        scaffoldBackgroundColor: Pallete.whiteColor,
-      ),
+          scaffoldBackgroundColor: Pallete.whiteColor,
+          appBarTheme: const AppBarTheme(
+            color: Pallete.whiteColor,
+          )),
       home: const HomePage(),
     );
   }
